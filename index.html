@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <h2>Dynamic Content Generator</h2>
+
+  <form id="myForm">
+    <label for="numInputs">Number of Input Fields:</label>
+    <select id="numInputs">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <button type="button" onclick="addInputFields()">Add Input Fields</button>
+
+    <div id="inputContainer"></div>
+  </form>
+
+  <button type="button" onclick="createTableRow()">Create Table Row</button>
+
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+
+  <button type="button" onclick="generateQuote()">Generate Quote</button>
+
+  <div id="quote"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
